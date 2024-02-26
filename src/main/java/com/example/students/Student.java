@@ -10,4 +10,8 @@ public class Student {
     String lastName;
     int age;
     int id;
+    @Override
+    public String toString(){
+        return String.format("Id: %d Имя: %s Фамилия: %s Возраст %d", id, firstName, lastName, age);
+    }
 }
